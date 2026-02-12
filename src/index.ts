@@ -4,7 +4,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 
-const BASE_URL = process.env.DUMBMONEY_API_URL || "https://dumbmoney.win";
+const BASE_URL = "https://dumbmoney.win";
 const API_KEY = process.env.DUMBMONEY_API_KEY || "";
 
 const server = new McpServer({

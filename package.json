@@ -1,0 +1,41 @@
+{
+  "name": "dumbmoney-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server for DumbMoney — query reflection tokens, check earnings, and create tokens on Solana",
+  "main": "dist/index.js",
+  "bin": {
+    "dumbmoney-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 dist/index.js",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "solana",
+    "defi",
+    "reflection-tokens",
+    "dumbmoney",
+    "model-context-protocol"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/errick0x/dumbmoney-mcp.git"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "README.md"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
